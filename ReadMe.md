@@ -11,4 +11,39 @@
 - Apply effects to your favorite photos :camera:
 - be happy :tada: 
 
+<table>
+<tr>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/SchermataIniziale.PNG">
+  </td>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/ImmagineAperta.PNG">
+  </td>
+  </tr>
+ <tr>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/ImmagineSfocata.PNG">
+  </td>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/ImmagineEffetto.PNG">
+  </td>
+  </tr>
+  <tr>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/ImmagineRuotata.PNG">
+  </td>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/Capovolta.PNG">
+  </td>
+  </tr>
+    <tr>
+<td>
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/SceltaColore.PNG">
+  </td>
+<td>
 <img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/Geometrico.PNG">
+  </td>
+  </tr>
+  
+  
+  
