@@ -44,6 +44,14 @@
 <img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/Geometrico.PNG">
   </td>
   </tr>
-  
-  
+ </table>
+ 
+ ## Support
+ For support contact me by email: **alessio.procelli@gmail.com** :e-mail:
+ 
+## Autor
+ Procelli Alessio :person_with_blond_hair:
+ 
+## license
+Open Source :unlock:
   
