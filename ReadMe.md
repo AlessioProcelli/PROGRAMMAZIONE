@@ -11,4 +11,4 @@
 - Apply effects to your favorite photos :camera:
 - be happy :tada: 
 
-[ok](https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/Geometrico.PNG)
+<img src="https://github.com/AlessioProcelli/PROGRAMMAZIONE/blob/master/ImmaginiProgetto/Geometrico.PNG">
