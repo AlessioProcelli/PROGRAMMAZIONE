@@ -1,0 +1,13 @@
+debug/baseeffect.o
+debug/brush.o
+debug/controller.o
+debug/graphicsview.o
+debug/line.o
+debug/main.o
+debug/model.o
+debug/rectangle.o
+debug/triangle.o
+debug/view.o
+debug/qrc_icone.o
+debug/moc_graphicsview.o
+debug/moc_view.o

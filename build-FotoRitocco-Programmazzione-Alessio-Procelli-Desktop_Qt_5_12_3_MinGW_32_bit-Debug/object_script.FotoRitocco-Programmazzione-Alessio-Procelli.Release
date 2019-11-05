@@ -1,0 +1,13 @@
+release/baseeffect.o
+release/brush.o
+release/controller.o
+release/graphicsview.o
+release/line.o
+release/main.o
+release/model.o
+release/rectangle.o
+release/triangle.o
+release/view.o
+release/qrc_icone.o
+release/moc_graphicsview.o
+release/moc_view.o
