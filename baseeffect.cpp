@@ -150,6 +150,8 @@ void BaseEffect::processing(QImage & img,int width,int height){
    img.setPixelColor(i,j,result.rgba());
         }
      }
+     for(int i=0;i<height;i++){
+     delete[] matrix[i];}
    }
 
 void BaseEffect::processingBlur(QImage* img,int width,int height){
@@ -280,7 +282,8 @@ void BaseEffect::processingBlur(QImage* img,int width,int height){
    img->setPixelColor(i,j,result.rgba());
         }
      }
-     delete[] matrix;
+     for(int i=0;i<height;i++){
+     delete[] matrix[i];}
    }
 
 

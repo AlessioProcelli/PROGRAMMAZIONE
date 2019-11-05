@@ -24,7 +24,11 @@ void Model::removeState(){
         state.pop_front();
     Model::notify();}
 }
-
+void Model::removeStatePermanently(){
+    if(state.size()>1){
+        state.pop_front();
+    Model::notify();}
+}
 
 void Model::cleanDeletedState(){
     deletedStated.clear();

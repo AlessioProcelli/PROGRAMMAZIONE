@@ -21,9 +21,7 @@ public:
     void removeDeletedState();
     QPixmap getCurrentDeletedState();
     QPixmap getNextDeletedStated();
-
-
-
+    void removeStatePermanently();
     void setNextDeletedStated(QPixmap pix);
     void restoreState();
     QPixmap* getCurrentState();//rende la vista corrente

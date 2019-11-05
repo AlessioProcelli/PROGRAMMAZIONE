@@ -21,9 +21,9 @@ void Controller::openFile(QString filename){
 }
 
 void Controller::effectPressed(std::shared_ptr<EffectsInterface>effect){
-    QPixmap* item =model->getCurrentState();
-    effect->apply(item);
-    model->addState(*item);
+    QPixmap item =*(model->getCurrentState());
+    effect->apply(&item);
+    model->addState(item);
 
 }
 void Controller::shapePressed(){
@@ -37,7 +37,7 @@ void Controller::paintPressed(){
 
 }
 void Controller::drawShape(int x, int y, Brush *brush, std::shared_ptr<Shape>shape){
-    model->removeState();
+    model->removeStatePermanently();
     model->addState(*(model->getCurrentState()));
     QPixmap* pixmap=model->getCurrentState();
     *pixmap=pixmap->scaled(pixmap->width()/2,pixmap->height()/2,Qt::KeepAspectRatio);
