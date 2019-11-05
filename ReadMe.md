@@ -9,4 +9,4 @@
 - Draw with as many colors as you want. :art:
 - Create amazing geometric combinations :triangular_ruler:
 - Apply effects to your favorite photos :camera:
-- **be happy ** :tada: 
+- be happy :tada: 
