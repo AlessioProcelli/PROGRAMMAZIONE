@@ -1,50 +1,41 @@
-
-
-#include <QMainWindow>
-#include <QGraphicsView>
-#include "viewinterface.h"
-#include "effectsinterface.h"
 #include "controller.h"
-#include "observer.h"
+#include "effectsinterface.h"
+#include "line.h"
 #include "model.h"
+#include "observer.h"
 #include "rectangle.h"
 #include "shape.h"
-#include "line.h"
 #include "triangle.h"
-
-
-
+#include "viewinterface.h"
+#include <QGraphicsView>
+#include <QMainWindow>
 
 namespace Ui {
 class View;
 }
 
-class View : public QMainWindow,ViewInterface,Observer
+class View : public QMainWindow, ViewInterface, Observer
 {
     Q_OBJECT
 
 public:
-    //metodi dell'interfaccia
-    void virtual effectPressed(std::shared_ptr<EffectsInterface> effect);
-    void virtual paintPressed();
+    void virtual effectPressed(std::shared_ptr<EffectsInterface> effect); //Richiama il controller
+    void virtual paintPressed();                                          //Richiama il Controller
     void openFile(QString file);
     void saveFile(QString file);
-    void virtual update();
+    void virtual update(); //Aggiorna la vista Corrente
     void virtual undo();
     void virtual redo();
-    void resize(QPixmap* matrix);
-    void changeColor(int red,int green,int blue);
+    void resize(QPixmap &matrix); //Modifica le dimensioni della vista prima di inserirla
+    void changeColor(int red, int green, int blue); //Cambia colore al pennello
 
-    explicit View(Model* mod,Controller* cont,QWidget *parent = nullptr);
+    explicit View(Model *mod, Controller *cont, QWidget *parent = nullptr);
     ~View();
-
-
 
 private slots:
     void on_actionOpen_triggered();
-
-    void on_draw(int x,int y);
-    void begin_draw(int x, int y);
+    void on_draw(int x, int y);    //segnale di disegno
+    void begin_draw(int x, int y); //segnale di avvio disegno
     void on_blur_clicked();
     void on_paint_clicked();
     void on_line_clicked();
@@ -72,15 +63,11 @@ private slots:
     void on_actionSave_triggered();
 
 private:
-
     Ui::View *ui;
-    Controller* controller;
-    Model* model;
-    std::shared_ptr<QGraphicsScene> scene;
-    Brush brush;
-    std::shared_ptr<Shape> shape;
+    Controller *controller;
+    Model *model;
+    std::shared_ptr<QGraphicsScene> scene; //puntatore alla scena corrente
+    Brush brush;                           //Pennello usato nel disegno
+    std::shared_ptr<Shape> shape;          //Puntatore alla figura Selezionata
     QPixmap currentColor;
-
 };
-
-

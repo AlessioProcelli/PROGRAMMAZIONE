@@ -6,8 +6,8 @@
 class EffectsInterface
 {
 public:
-    virtual ~EffectsInterface(){}
-    void virtual apply(QPixmap* pixmap)=0;
+    virtual ~EffectsInterface() {}
+    void virtual apply(QPixmap &pixmap) = 0;
 };
 
 #endif // EFFECTSINTERFACE_H
