@@ -7,15 +7,18 @@ Brush::Brush()
     tickness = 5;
     color.setRgb(0, 0, 0);
 }
+
 Brush::Brush(int tick, QRgb color)
 {
     tickness = tick;
     this->color.setRgb(color);
 }
+
 void Brush::setColor(int red, int blue, int green)
 {
     color.setRgb(red, green, blue);
 }
+
 void Brush::setTickness(int t)
 {
     tickness = t;
