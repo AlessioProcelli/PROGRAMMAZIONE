@@ -2,11 +2,13 @@
 #include "line.h"
 
 Triangle::Triangle() {}
+
 void Triangle::setStartCoordinates(int x, int y)
 {
     xStart = x;
     yStart = y;
 }
+
 QPoint Triangle::getStartCoordinates()
 {
     return QPoint(xStart, yStart);
@@ -29,6 +31,7 @@ void Triangle::draw(QPixmap &matrix, int x, int y, Brush &brush) //implementata 
         }
     }
 }
+
 float Triangle::calculateArea(int x, int y)
 {
     int width = x - xStart;
