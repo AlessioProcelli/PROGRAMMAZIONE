@@ -104,6 +104,7 @@ void View::undo()
 {
     controller->undo();
 }
+
 void View::redo()
 {
     controller->redo();
