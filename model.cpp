@@ -24,6 +24,7 @@ void Model::removeState()
         Model::notify();
     }
 }
+
 void Model::removeStatePermanently()
 {
     if (state.size() > 1) {
@@ -36,18 +37,22 @@ void Model::cleanDeletedState()
 {
     deletedStated.clear();
 }
+
 void Model::removeDeletedState()
 {
     deletedStated.pop_front();
 }
+
 void Model::setNextDeletedStated(QPixmap pix)
 {
     nextDeletedStated = pix;
 }
+
 QPixmap Model::getNextDeletedStated()
 {
     return nextDeletedStated;
 }
+
 QPixmap Model::getCurrentDeletedState()
 {
     return deletedStated.front();
@@ -75,6 +80,7 @@ void Model::removeObserver(Observer *o)
 {
     observers.remove(o);
 }
+
 void Model::notify()
 {
     for (auto observer : observers) {
