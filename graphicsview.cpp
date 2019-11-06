@@ -15,8 +15,10 @@ void GraphicsView::mousePressEvent(QMouseEvent *event)
 {
     emit beginDrawing(event->x(), event->y());
 }
+
 void GraphicsView::mouseMoveEvent(QMouseEvent *event)
 {
     emit drawing(event->x(), event->y());
 }
+
 void GraphicsView::mouseReleaseEvent(QMouseEvent *event) {}
