@@ -12,10 +12,12 @@ void Rectangle::setStartCoordinates(int x, int y)
     xStart = x;
     yStart = y;
 }
+
 QPoint Rectangle::getStartCoordinates()
 {
     return QPoint(xStart, yStart);
 }
+
 void Rectangle::draw(QPixmap &matrix, int x, int y, Brush &brush)
 {
     if (xStart < x) {
@@ -61,6 +63,7 @@ float Rectangle::calculateArea(int x, int y)
     }
     return width * height;
 }
+
 float Rectangle::getArea()
 {
     return area;
